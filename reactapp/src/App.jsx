@@ -14,7 +14,7 @@ function App() {
   const [searchId, setSearchId] = useState("");
   const [searchResult, setSearchResult] = useState(null);
 
-  // Load Applicants
+  // Load Applicants and which are up to date
   const loadApplicants = async () => {
     const res = await fetch(`${BASE_URL}/viewall`);
     const data = await res.json();
